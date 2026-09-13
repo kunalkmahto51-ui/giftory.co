@@ -55,26 +55,48 @@ quoteButtons.forEach(button => {
 });
 
 
-// 4. CONTACT FORM
-const contactForm = document.querySelector(".contact-form");
+// =========================================
+// CORPORATE ENQUIRY -> WHATSAPP
+// =========================================
 
-if (contactForm) {
-  contactForm.addEventListener("submit", function (e) {
+const corporateForm =
+  document.querySelector("#corporateEnquiryForm");
+
+if (corporateForm) {
+
+  corporateForm.addEventListener("submit", function (e) {
+
     e.preventDefault();
 
-    const inputs = contactForm.querySelectorAll("input");
-    const textarea = contactForm.querySelector("textarea");
+    const inputs =
+      corporateForm.querySelectorAll("input");
 
-    const companyName = inputs[0].value.trim();
-    const contactPerson = inputs[1].value.trim();
-    const phone = inputs[2].value.trim();
-    const email = inputs[3].value.trim();
-    const quantity = inputs[4].value.trim();
-    const budget = inputs[5].value.trim();
-    const message = textarea.value.trim();
+    const textarea =
+      corporateForm.querySelector("textarea");
 
-    if (!contactPerson || !phone || !email) {
-      alert("Please fill Contact Person, Phone Number and Email.");
+    const companyName =
+      inputs[0]?.value.trim() || "";
+
+    const contactPerson =
+      inputs[1]?.value.trim() || "";
+
+    const phone =
+      inputs[2]?.value.trim() || "";
+
+    const email =
+      inputs[3]?.value.trim() || "";
+
+    const quantity =
+      inputs[4]?.value.trim() || "";
+
+    const budget =
+      inputs[5]?.value.trim() || "";
+
+    const message =
+      textarea?.value.trim() || "";
+
+    if (!contactPerson || !phone) {
+      alert("Please enter Contact Person and Phone Number.");
       return;
     }
 
@@ -83,32 +105,52 @@ if (contactForm) {
       return;
     }
 
-    const emailPattern =
-      /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const whatsappMessage = `
+Hello Giftory.co,
 
-    if (!emailPattern.test(email)) {
-      alert("Please enter a valid email address.");
-      return;
-    }
+I would like to enquire about Corporate Gifting.
 
-    const enquiryData = {
-      companyName,
-      contactPerson,
-      phone,
-      email,
-      quantity,
-      budget,
-      message
-    };
+CORPORATE ENQUIRY
 
-    console.log("Giftory Enquiry:", enquiryData);
+Company Name:
+${companyName || "Not specified"}
 
-    alert(
-      "Thank you! Your gifting enquiry has been received."
+Contact Person:
+${contactPerson}
+
+Phone:
+${phone}
+
+Email:
+${email || "Not specified"}
+
+Quantity:
+${quantity || "Not specified"}
+
+Budget:
+${budget || "Not specified"}
+
+Requirement:
+${message || "Not specified"}
+
+Please share suitable gifting options and quotation.
+
+Thank you.
+    `;
+
+    const whatsappNumber =
+      "919082698013";
+
+    const whatsappURL =
+      `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+    window.open(
+      whatsappURL,
+      "_blank"
     );
 
-    contactForm.reset();
   });
+
 }
 
 
