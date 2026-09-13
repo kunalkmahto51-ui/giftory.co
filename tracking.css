@@ -1,0 +1,1978 @@
+/* =========================================
+GIFTORY PREMIUM TRACKING PAGE
+========================================= */
+
+:root {
+
+  --track-green: #073f34;
+  --track-green-dark: #052f27;
+  --track-green-light: #18594b;
+
+  --track-gold: #bd8d43;
+  --track-gold-light: #d8b576;
+
+  --track-cream: #f7f1e7;
+  --track-cream-light: #fffaf3;
+
+  --track-text: #153c34;
+  --track-muted: #68746f;
+
+  --track-white: #ffffff;
+
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+.tracking-body {
+  margin: 0;
+  background: var(--track-cream-light);
+  color: var(--track-text);
+}
+
+
+
+/* =========================================
+HEADER
+========================================= */
+
+.tracking-header {
+
+  position: relative;
+  z-index: 100;
+
+  background: rgba(255, 252, 247, 0.98);
+
+  border-bottom:
+    1px solid rgba(189, 141, 67, 0.13);
+
+}
+
+
+.tracking-header-inner {
+
+  width: min(94%, 1420px);
+
+  min-height: 84px;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 28px;
+
+}
+
+
+
+/* BRAND */
+
+.tracking-brand {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 11px;
+
+  text-decoration: none;
+
+  flex-shrink: 0;
+
+}
+
+
+.tracking-brand img {
+
+  width: 53px;
+  height: 53px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+}
+
+
+.tracking-brand-text {
+
+  display: flex;
+
+  flex-direction: column;
+
+}
+
+
+.tracking-brand-text strong {
+
+  color: var(--track-green);
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 26px;
+
+  letter-spacing: 0.5px;
+
+  line-height: 1;
+
+}
+
+
+.tracking-brand-text strong span {
+
+  color: var(--track-gold);
+
+}
+
+
+.tracking-brand-text small {
+
+  margin-top: 6px;
+
+  color: var(--track-gold);
+
+  font-size: 8px;
+
+  font-weight: 700;
+
+  letter-spacing: 2.4px;
+
+}
+
+
+
+/* =========================================
+DESKTOP NAV
+========================================= */
+
+.tracking-desktop-nav {
+
+  margin-left: auto;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 27px;
+
+}
+
+
+.tracking-desktop-nav > a {
+
+  color: #163c34;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  white-space: nowrap;
+
+  transition: 0.2s ease;
+
+}
+
+
+.tracking-desktop-nav > a:hover,
+.tracking-desktop-nav > a.active {
+
+  color: var(--track-gold);
+
+}
+
+
+
+/* =========================================
+SHOP DROPDOWN
+========================================= */
+
+.tracking-desktop-nav .shop-dropdown {
+
+  position: relative;
+
+}
+
+
+.tracking-desktop-nav .shop-dropdown-btn {
+
+  border: 0;
+
+  background: transparent;
+
+  color: #163c34;
+
+  padding: 12px 0;
+
+  font-size: 14px;
+
+  cursor: pointer;
+
+  white-space: nowrap;
+
+}
+
+
+.tracking-desktop-nav .shop-dropdown-btn span {
+
+  margin-left: 4px;
+
+  color: var(--track-gold);
+
+}
+
+
+
+/* =========================================
+GET QUOTE
+========================================= */
+
+.tracking-quote-btn {
+
+  flex-shrink: 0;
+
+  padding: 14px 28px;
+
+  border: 1px solid var(--track-gold);
+
+  border-radius: 30px;
+
+  background: var(--track-green);
+
+  color: #fff;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  transition: 0.25s ease;
+
+}
+
+
+.tracking-quote-btn:hover {
+
+  background: var(--track-gold);
+
+}
+
+
+
+/* =========================================
+HAMBURGER
+========================================= */
+
+.tracking-menu-toggle {
+
+  display: none;
+
+  width: 44px;
+  height: 44px;
+
+  border: 1px solid #ded4c5;
+
+  border-radius: 50%;
+
+  background: #fffaf3;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-direction: column;
+
+  gap: 5px;
+
+  cursor: pointer;
+
+}
+
+
+.tracking-menu-toggle span {
+
+  width: 19px;
+  height: 2px;
+
+  background: var(--track-green);
+
+  transition: 0.25s ease;
+
+}
+
+
+.tracking-mobile-menu {
+
+  display: none;
+
+}
+
+
+
+/* =========================================
+PREMIUM HERO
+========================================= */
+
+.tracking-premium-hero {
+
+  position: relative;
+
+  overflow: hidden;
+
+  min-height: 650px;
+
+  background:
+    radial-gradient(
+      circle at 30% 15%,
+      rgba(255,255,255,0.95),
+      transparent 35%
+    ),
+    linear-gradient(
+      120deg,
+      #fffdf9 0%,
+      #f6efe4 55%,
+      #e9ddcb 100%
+    );
+
+}
+
+
+.tracking-premium-inner {
+
+  width: min(94%, 1420px);
+
+  min-height: 650px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 53%)
+    minmax(0, 47%);
+
+  align-items: stretch;
+
+}
+
+
+
+/* DECOR */
+
+.tracking-decor {
+
+  position: absolute;
+
+  pointer-events: none;
+
+  border-radius: 50%;
+
+}
+
+
+.tracking-decor-one {
+
+  width: 430px;
+  height: 430px;
+
+  left: -300px;
+  top: 210px;
+
+  border:
+    1px solid rgba(189, 141, 67, 0.25);
+
+}
+
+
+.tracking-decor-two {
+
+  width: 650px;
+  height: 650px;
+
+  right: -340px;
+  top: -360px;
+
+  border:
+    1px solid rgba(189, 141, 67, 0.18);
+
+}
+
+
+
+/* =========================================
+LEFT HERO
+========================================= */
+
+.tracking-left {
+
+  position: relative;
+
+  z-index: 3;
+
+  padding:
+    55px
+    36px
+    44px
+    25px;
+
+}
+
+
+.tracking-title-small {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  margin-bottom: 18px;
+
+  color: var(--track-gold);
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  letter-spacing: 3px;
+
+}
+
+
+.tracking-title-small span {
+
+  width: 37px;
+  height: 1px;
+
+  background: var(--track-gold);
+
+}
+
+
+
+.tracking-left h1 {
+
+  margin: 0;
+
+  max-width: 620px;
+
+  color: var(--track-green);
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: clamp(
+    58px,
+    5vw,
+    78px
+  );
+
+  line-height: 0.98;
+
+  font-weight: 700;
+
+}
+
+
+.tracking-left h1 strong {
+
+  display: block;
+
+  color: var(--track-gold);
+
+  font-weight: 700;
+
+}
+
+
+
+.tracking-subtitle {
+
+  max-width: 650px;
+
+  margin:
+    22px
+    0
+    27px;
+
+  color: #52635e;
+
+  font-size: 16px;
+
+  line-height: 1.65;
+
+}
+
+
+
+/* =========================================
+TRACKING CARD
+========================================= */
+
+.premium-tracking-card {
+
+  max-width: 700px;
+
+  padding: 27px;
+
+  border:
+
+    1px solid
+    rgba(189, 141, 67, 0.24);
+
+  border-radius: 25px;
+
+  background:
+    rgba(255, 255, 255, 0.9);
+
+  box-shadow:
+    0 22px 55px
+    rgba(31, 54, 46, 0.11);
+
+  backdrop-filter: blur(10px);
+
+}
+
+
+.partner-heading,
+.awb-label {
+
+  display: block;
+
+  margin-bottom: 11px;
+
+  color: var(--track-green);
+
+  font-size: 14px;
+
+  font-weight: 800;
+
+}
+
+
+.partner-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 13px;
+
+  margin-bottom: 20px;
+
+}
+
+
+
+/* =========================================
+PARTNER CARDS
+========================================= */
+
+.partner-card {
+
+  position: relative;
+
+  min-height: 75px;
+
+  border:
+    1.5px solid #ddd2c3;
+
+  border-radius: 16px;
+
+  background: #fff;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  transition: 0.25s ease;
+
+}
+
+
+.partner-card:hover {
+
+  transform: translateY(-2px);
+
+  border-color:
+    var(--track-gold);
+
+}
+
+
+.partner-card.active {
+
+  border:
+    1.5px solid
+    var(--track-green);
+
+  box-shadow:
+    0 8px 20px
+    rgba(7,63,52,0.09);
+
+}
+
+
+.partner-radio {
+
+  position: absolute;
+
+  left: 19px;
+
+  width: 22px;
+  height: 22px;
+
+  border:
+
+    1.5px solid
+    #d5b67e;
+
+  border-radius: 50%;
+
+  background: #fff;
+
+}
+
+
+.partner-card.active
+.partner-radio {
+
+  border-color:
+    var(--track-green);
+
+  background:
+    var(--track-green);
+
+}
+
+
+.partner-card.active
+.partner-radio::after {
+
+  content: "✓";
+
+  position: absolute;
+
+  inset: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: white;
+
+  font-size: 12px;
+
+}
+
+
+
+/* DTDC */
+
+.dtdc-logo {
+
+  color: #163987;
+
+  font-size: 25px;
+
+  font-weight: 900;
+
+  font-style: italic;
+
+  letter-spacing: -1px;
+
+}
+
+
+.dtdc-logo span {
+
+  color: #ef2e3e;
+
+}
+
+
+
+/* DELHIVERY */
+
+.delhivery-logo {
+
+  color: #171717;
+
+  font-size: 20px;
+
+  font-weight: 900;
+
+  letter-spacing: 0.3px;
+
+}
+
+
+.partner-card.active
+.delhivery-logo {
+
+  color: var(--track-green);
+
+}
+
+
+
+/* =========================================
+INPUT
+========================================= */
+
+.awb-label {
+
+  margin-top: 2px;
+
+}
+
+
+.premium-input-row {
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    210px;
+
+  gap: 14px;
+
+}
+
+
+.premium-input-box {
+
+  min-height: 59px;
+
+  padding: 0 17px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  border:
+    1.5px solid #dfd6ca;
+
+  border-radius: 15px;
+
+  background: #fffdf9;
+
+  transition: 0.25s ease;
+
+}
+
+
+.premium-input-box:focus-within {
+
+  border-color:
+    var(--track-gold);
+
+  box-shadow:
+    0 0 0 4px
+    rgba(189,141,67,0.08);
+
+}
+
+
+.premium-input-box svg {
+
+  width: 23px;
+  height: 23px;
+
+  fill:
+    var(--track-green);
+
+  flex-shrink: 0;
+
+}
+
+
+.premium-input-box input {
+
+  width: 100%;
+
+  border: none;
+
+  outline: none;
+
+  background: transparent;
+
+  color: var(--track-text);
+
+  font-size: 14px;
+
+}
+
+
+.premium-input-box input::placeholder {
+
+  color: #969a97;
+
+}
+
+
+
+/* =========================================
+TRACK BUTTON
+========================================= */
+
+.premium-track-btn {
+
+  min-height: 59px;
+
+  padding: 0 25px;
+
+  border: none;
+
+  border-radius: 15px;
+
+  background:
+    var(--track-green);
+
+  color: white;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 17px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 17px;
+
+  transition: 0.25s ease;
+
+}
+
+
+.premium-track-btn span {
+
+  font-family: Arial;
+
+  font-size: 23px;
+
+  transition: 0.25s ease;
+
+}
+
+
+.premium-track-btn:hover {
+
+  background:
+    var(--track-gold);
+
+  transform:
+    translateY(-2px);
+
+}
+
+
+.premium-track-btn:hover span {
+
+  transform:
+    translateX(5px);
+
+}
+
+
+
+/* ERROR */
+
+.tracking-error {
+
+  min-height: 18px;
+
+  margin: 6px 0 0;
+
+  color: #b84545;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+}
+
+
+
+/* OFFICIAL */
+
+.official-tracking {
+
+  margin-top: 8px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  color: #50605b;
+
+  font-size: 12px;
+
+}
+
+
+.shield-icon {
+
+  width: 20px;
+  height: 20px;
+
+  border-radius: 6px;
+
+  background:
+    var(--track-green);
+
+  color: white;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 10px;
+
+}
+
+
+
+/* =========================================
+RIGHT VISUAL - TRACKING HERO IMAGE
+========================================= */
+
+.tracking-right {
+  position: relative;
+  min-width: 0;
+  min-height: 650px;
+  overflow: hidden;
+}
+
+
+/* MAIN IMAGE */
+
+.delivery-background {
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(
+      to right,
+      rgba(247, 241, 231, 0.10) 0%,
+      rgba(247, 241, 231, 0) 18%
+    ),
+    url("trackinghero.png");
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  overflow: hidden;
+}
+
+
+/* GOLD CURVED EDGE */
+
+.delivery-background::before {
+  content: "";
+
+  position: absolute;
+
+  left: -110px;
+  top: -100px;
+
+  width: 210px;
+  height: 850px;
+
+  border-radius: 50%;
+
+  border-right:
+    3px solid rgba(189, 141, 67, 0.75);
+
+  pointer-events: none;
+}
+
+
+/* SOFT EDGE BLEND */
+
+.delivery-background::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to right,
+      rgba(247, 241, 231, 0.20) 0%,
+      transparent 16%,
+      transparent 100%
+    );
+
+  pointer-events: none;
+}
+
+
+/* =========================================
+HIDE OLD CSS-GENERATED ARTWORK
+========================================= */
+
+.delivery-truck,
+.parcel,
+.premium-gift,
+.delivery-side-card,
+.delivery-quote {
+  display: none !important;
+}
+
+
+/* =========================================
+PAN INDIA LABEL
+========================================= */
+
+.delivery-label {
+  position: absolute;
+
+  z-index: 5;
+
+  top: 43px;
+  right: 42px;
+
+  color: #073f34;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 4px;
+  line-height: 1.9;
+
+  text-shadow:
+    0 1px 5px rgba(255, 255, 255, 0.7);
+}
+
+.delivery-label span {
+  display: block;
+}
+
+
+/* =========================================
+RESPONSIVE IMAGE
+========================================= */
+
+@media (max-width: 1050px) {
+
+  .tracking-right {
+    min-height: 560px;
+  }
+
+  .delivery-background {
+    position: relative;
+    min-height: 560px;
+
+    background-size: cover;
+    background-position: center center;
+  }
+
+}
+
+
+@media (max-width: 760px) {
+
+  .tracking-right {
+    min-height: 470px;
+  }
+
+  .delivery-background {
+    min-height: 470px;
+
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .delivery-background::before {
+    display: none;
+  }
+
+  .delivery-label {
+    top: 25px;
+    right: 25px;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  .tracking-right {
+    min-height: 400px;
+  }
+
+  .delivery-background {
+    min-height: 400px;
+
+    background-position: 57% center;
+  }
+
+  .delivery-label {
+    display: none;
+  }
+
+}
+
+
+/* =========================================
+BENEFITS
+========================================= */
+
+.tracking-benefits-premium {
+
+  position: relative;
+
+  z-index: 15;
+
+  padding:
+    25px
+    30px;
+
+  background:
+    #fffdf9;
+
+  border-top:
+
+    1px solid
+    #ebe0d1;
+
+  border-bottom:
+
+    1px solid
+    #ebe0d1;
+
+}
+
+
+.tracking-benefits-grid {
+
+  width: min(94%, 1420px);
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+}
+
+
+.tracking-benefit-item {
+
+  padding:
+    7px
+    28px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  border-right:
+
+    1px solid
+    #e4dacc;
+
+}
+
+
+.tracking-benefit-item:last-child {
+
+  border-right: none;
+
+}
+
+
+.tracking-benefit-icon {
+
+  width: 54px;
+  height: 54px;
+
+  flex-shrink: 0;
+
+  border:
+
+    1px solid
+    #d8ad66;
+
+  border-radius: 50%;
+
+  background:
+    #fbf1df;
+
+  color: var(--track-gold);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 21px;
+
+}
+
+
+.tracking-benefit-item h3 {
+
+  margin:
+    0
+    0
+    5px;
+
+  color:
+    var(--track-green);
+
+  font-family:
+    Georgia,
+    serif;
+
+  font-size: 17px;
+
+}
+
+
+.tracking-benefit-item p {
+
+  margin: 0;
+
+  color: #66716d;
+
+  font-size: 12px;
+
+}
+
+
+
+/* =========================================
+HELP STRIP
+========================================= */
+
+.tracking-help-strip {
+
+  position: relative;
+
+  overflow: hidden;
+
+  padding:
+    35px
+    30px;
+
+  background:
+
+    linear-gradient(
+      100deg,
+      #073f34,
+      #034235,
+      #06382e
+    );
+
+}
+
+
+.tracking-help-strip::before {
+
+  content: "";
+
+  position: absolute;
+
+  left: -85px;
+  bottom: -130px;
+
+  width: 300px;
+  height: 300px;
+
+  border-radius: 50%;
+
+  background:
+    rgba(255,255,255,0.025);
+
+}
+
+
+.tracking-help-inner {
+
+  position: relative;
+
+  z-index: 2;
+
+  width: min(94%, 1350px);
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    1.2fr
+    1.25fr
+    1fr
+    0.7fr;
+
+  align-items: center;
+
+  gap: 35px;
+
+}
+
+
+.tracking-help-title h2 {
+
+  margin: 0;
+
+  color: white;
+
+  font-family:
+    Georgia,
+    serif;
+
+  font-size: 22px;
+
+}
+
+
+.tracking-help-title p {
+
+  margin:
+    7px
+    0
+    0;
+
+  color:
+    rgba(255,255,255,0.75);
+
+}
+
+
+
+/* WHATSAPP */
+
+.tracking-whatsapp-btn {
+
+  min-height: 57px;
+
+  padding:
+    0
+    24px;
+
+  border:
+
+    1px solid
+    var(--track-gold);
+
+  border-radius: 30px;
+
+  color: white;
+
+  text-decoration: none;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 13px;
+
+  font-weight: 700;
+
+  transition: 0.25s ease;
+
+}
+
+
+.tracking-whatsapp-btn span {
+
+  width: 37px;
+  height: 37px;
+
+  border-radius: 50%;
+
+  background: #20c567;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 22px;
+
+}
+
+
+.tracking-whatsapp-btn:hover {
+
+  background:
+    var(--track-gold);
+
+}
+
+
+
+/* MESSAGE */
+
+.tracking-help-message {
+
+  color: white;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+}
+
+
+.tracking-help-message > span {
+
+  font-size: 30px;
+
+}
+
+
+.tracking-help-message small {
+
+  display: block;
+
+  color:
+    rgba(255,255,255,0.7);
+
+  margin-bottom: 4px;
+
+}
+
+
+.tracking-help-message strong {
+
+  font-size: 13px;
+
+}
+
+
+
+/* SLOGAN */
+
+.tracking-help-slogan {
+
+  color:
+    var(--track-gold);
+
+  font-size: 10px;
+
+  line-height: 1.7;
+
+  letter-spacing: 3px;
+
+}
+
+
+
+/* =========================================
+RESPONSIVE - 1250
+========================================= */
+
+@media (max-width: 1250px) {
+
+  .tracking-desktop-nav {
+
+    gap: 17px;
+
+  }
+
+
+  .tracking-desktop-nav > a,
+  .tracking-desktop-nav
+  .shop-dropdown-btn {
+
+    font-size: 12px;
+
+  }
+
+
+  .tracking-quote-btn {
+
+    padding:
+      13px
+      20px;
+
+  }
+
+
+  .tracking-left h1 {
+
+    font-size: 61px;
+
+  }
+
+
+  .delivery-side-card {
+
+    display: none;
+
+  }
+
+}
+
+
+
+/* =========================================
+RESPONSIVE - 1050
+========================================= */
+
+@media (max-width: 1050px) {
+
+  .tracking-desktop-nav,
+  .tracking-quote-btn {
+
+    display: none;
+
+  }
+
+
+  .tracking-menu-toggle {
+
+    margin-left: auto;
+
+    display: flex;
+
+  }
+
+
+  .tracking-mobile-menu {
+
+    position: absolute;
+
+    left: 3%;
+    right: 3%;
+
+    top: 76px;
+
+    padding: 18px;
+
+    border-radius: 18px;
+
+    background: white;
+
+    box-shadow:
+      0 20px 40px
+      rgba(7,63,52,0.14);
+
+    flex-direction: column;
+
+  }
+
+
+  .tracking-mobile-menu.active {
+
+    display: flex;
+
+  }
+
+
+  .tracking-mobile-menu a {
+
+    padding: 11px 10px;
+
+    color:
+      var(--track-green);
+
+    text-decoration: none;
+
+    border-bottom:
+      1px solid #eee5d8;
+
+  }
+
+
+  .tracking-mobile-menu a:last-child {
+
+    border-bottom: none;
+
+  }
+
+
+  .tracking-premium-inner {
+
+    grid-template-columns:
+      1fr;
+
+  }
+
+
+  .tracking-left {
+
+    padding:
+      55px
+      25px
+      45px;
+
+  }
+
+
+  .tracking-right {
+
+    min-height: 530px;
+
+  }
+
+
+  .delivery-background {
+
+    position: relative;
+
+    min-height: 530px;
+
+  }
+
+
+  .tracking-help-inner {
+
+    grid-template-columns:
+      repeat(2, 1fr);
+
+  }
+
+}
+
+
+
+/* =========================================
+RESPONSIVE - 760
+========================================= */
+
+@media (max-width: 760px) {
+
+  .tracking-header-inner {
+
+    min-height: 72px;
+
+  }
+
+
+  .tracking-brand img {
+
+    width: 45px;
+    height: 45px;
+
+  }
+
+
+  .tracking-brand-text strong {
+
+    font-size: 21px;
+
+  }
+
+
+  .tracking-brand-text small {
+
+    display: none;
+
+  }
+
+
+  .tracking-left {
+
+    padding:
+      42px
+      16px
+      35px;
+
+  }
+
+
+  .tracking-title-small {
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+  }
+
+
+  .tracking-title-small span {
+
+    width: 23px;
+
+  }
+
+
+  .tracking-left h1 {
+
+    font-size: 46px;
+
+  }
+
+
+  .tracking-subtitle {
+
+    font-size: 14px;
+
+  }
+
+
+  .premium-tracking-card {
+
+    padding: 20px;
+
+  }
+
+
+  .partner-grid {
+
+    grid-template-columns: 1fr;
+
+  }
+
+
+  .premium-input-row {
+
+    grid-template-columns: 1fr;
+
+  }
+
+
+  .premium-track-btn {
+
+    width: 100%;
+
+  }
+
+
+  .tracking-right {
+
+    min-height: 430px;
+
+  }
+
+
+  .delivery-background {
+
+    min-height: 430px;
+
+  }
+
+
+  .delivery-truck {
+
+    transform:
+      scale(0.72);
+
+    transform-origin:
+      right top;
+
+    right: -10px;
+
+  }
+
+
+  .premium-gift {
+
+    transform:
+      scale(0.75);
+
+    transform-origin:
+      left bottom;
+
+    left: 15px;
+
+  }
+
+
+  .delivery-quote {
+
+    transform:
+      scale(0.78);
+
+    transform-origin:
+      right bottom;
+
+  }
+
+
+  .tracking-benefits-grid {
+
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    gap: 20px;
+
+  }
+
+
+  .tracking-benefit-item {
+
+    border-right: none;
+
+    padding: 8px;
+
+  }
+
+
+  .tracking-help-inner {
+
+    grid-template-columns: 1fr;
+
+  }
+
+
+  .tracking-help-slogan {
+
+    display: none;
+
+  }
+
+}
+
+
+
+/* =========================================
+RESPONSIVE - 480
+========================================= */
+
+@media (max-width: 480px) {
+
+  .tracking-brand-text strong {
+
+    font-size: 19px;
+
+  }
+
+
+  .tracking-left h1 {
+
+    font-size: 39px;
+
+  }
+
+
+  .tracking-title-small span {
+
+    display: none;
+
+  }
+
+
+  .premium-tracking-card {
+
+    padding: 17px;
+
+    border-radius: 19px;
+
+  }
+
+
+  .partner-card {
+
+    min-height: 66px;
+
+  }
+
+
+  .tracking-right {
+
+    min-height: 370px;
+
+  }
+
+
+  .delivery-background {
+
+    min-height: 370px;
+
+  }
+
+
+  .delivery-label {
+
+    display: none;
+
+  }
+
+
+  .delivery-truck {
+
+    transform:
+      scale(0.6);
+
+    right: -50px;
+
+    top: 135px;
+
+  }
+
+
+  .premium-gift {
+
+    transform:
+      scale(0.63);
+
+    left: 7px;
+
+  }
+
+
+  .tracking-benefits-grid {
+
+    grid-template-columns: 1fr;
+
+  }
+
+
+  .tracking-benefit-item {
+
+    border-bottom:
+      1px solid #eee4d7;
+
+    padding:
+      11px
+      0;
+
+  }
+
+
+  .tracking-benefit-item:last-child {
+
+    border-bottom: none;
+
+  }
+
+}

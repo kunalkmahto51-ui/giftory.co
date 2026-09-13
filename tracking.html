@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Track Your Order | Giftory.co</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="tracking.css">
+</head>
+
+
+<body class="tracking-body">
+
+
+<!-- =========================================
+HEADER
+========================================= -->
+
+<header class="tracking-header">
+
+  <div class="tracking-header-inner">
+
+    <!-- LOGO -->
+
+    <a
+      href="index.html"
+      class="tracking-brand"
+    >
+
+      <img
+        src="giftory_logo.png"
+        alt="Giftory Logo"
+      >
+
+      <div class="tracking-brand-text">
+
+        <strong>
+          GIFTORY<span>.CO</span>
+        </strong>
+
+        <small>
+          GIFTS FOR EVERY STORY
+        </small>
+
+      </div>
+
+    </a>
+
+
+    <!-- DESKTOP NAV -->
+
+    <nav class="tracking-desktop-nav">
+
+      <a href="index.html">
+        Home
+      </a>
+
+
+      <div class="shop-dropdown">
+
+        <button
+          type="button"
+          class="shop-dropdown-btn"
+          id="shopDropdownBtn"
+        >
+          Shop Gifts
+          <span>⌄</span>
+        </button>
+
+
+        <div class="shop-dropdown-menu">
+
+          <a href="festive-gifts.html">
+            <strong>Festive Hampers</strong>
+            <small>Diwali & festive gifting</small>
+          </a>
+
+          <a href="corporate-gifts.html">
+            <strong>Corporate Gifts</strong>
+            <small>Employee & client gifting</small>
+          </a>
+
+          <a href="electronics.html">
+            <strong>Electronics</strong>
+            <small>Earbuds, watches & gadgets</small>
+          </a>
+
+          <a href="kitchen-home.html">
+            <strong>Kitchen & Home</strong>
+            <small>Home, kitchen & lifestyle</small>
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <a href="corporate-gifts.html">
+        Corporate Gifting
+      </a>
+
+      <a href="custom-hamper.html">
+        Custom Gifts
+      </a>
+
+      <a
+        href="tracking.html"
+        class="active"
+      >
+        Track Order
+      </a>
+
+      <a href="index.html#about">
+        About
+      </a>
+
+      <a href="index.html#contact">
+        Contact
+      </a>
+
+    </nav>
+
+
+    <!-- GET QUOTE -->
+
+    <a
+      href="index.html#contact"
+      class="tracking-quote-btn"
+    >
+      Get Quote
+    </a>
+
+
+    <!-- HAMBURGER -->
+
+    <button
+      class="tracking-menu-toggle"
+      id="trackingMenuToggle"
+      aria-label="Open Menu"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+
+
+  <!-- MOBILE MENU -->
+
+  <div
+    class="tracking-mobile-menu"
+    id="trackingMobileMenu"
+  >
+
+    <a href="index.html">
+      Home
+    </a>
+
+    <a href="festive-gifts.html">
+      Festive Hampers
+    </a>
+
+    <a href="corporate-gifts.html">
+      Corporate Gifts
+    </a>
+
+    <a href="electronics.html">
+      Electronics
+    </a>
+
+    <a href="kitchen-home.html">
+      Kitchen & Home
+    </a>
+
+    <a href="custom-hamper.html">
+      Custom Gifts
+    </a>
+
+    <a href="tracking.html">
+      Track Order
+    </a>
+
+    <a href="index.html#about">
+      About
+    </a>
+
+    <a href="index.html#contact">
+      Contact
+    </a>
+
+  </div>
+
+</header>
+
+
+
+<!-- =========================================
+HERO
+========================================= -->
+
+<main>
+
+<section class="tracking-premium-hero">
+
+
+  <div class="tracking-decor tracking-decor-one"></div>
+  <div class="tracking-decor tracking-decor-two"></div>
+
+
+  <div class="tracking-premium-inner">
+
+
+    <!-- =====================================
+    LEFT
+    ====================================== -->
+
+    <div class="tracking-left">
+
+
+      <div class="tracking-title-small">
+
+        <span></span>
+
+        TRACK YOUR ORDER
+
+        <span></span>
+
+      </div>
+
+
+      <h1>
+
+        Your Gift is
+
+        <strong>
+          on the Way.
+        </strong>
+
+      </h1>
+
+
+      <p class="tracking-subtitle">
+
+        Track your Giftory delivery using your
+        AWB or tracking number.
+
+        Select your delivery partner below to
+        get the latest shipment status.
+
+      </p>
+
+
+
+      <!-- =====================================
+      TRACKING CARD
+      ====================================== -->
+
+      <div class="premium-tracking-card">
+
+
+        <label class="partner-heading">
+          Select Delivery Partner
+        </label>
+
+
+        <div class="partner-grid">
+
+
+          <!-- DTDC -->
+
+          <button
+            type="button"
+            class="partner-card"
+            data-courier="dtdc"
+          >
+
+            <span class="partner-radio"></span>
+
+            <div class="dtdc-logo">
+              DTDC<span>➤</span>
+            </div>
+
+          </button>
+
+
+
+          <!-- DELHIVERY -->
+
+          <button
+            type="button"
+            class="partner-card active"
+            data-courier="delhivery"
+          >
+
+            <span class="partner-radio"></span>
+
+            <div class="delhivery-logo">
+              DELHIVERY
+            </div>
+
+          </button>
+
+
+        </div>
+
+
+
+        <!-- AWB -->
+
+        <label
+          for="trackingNumber"
+          class="awb-label"
+        >
+          Enter AWB / Tracking Number
+        </label>
+
+
+        <div class="premium-input-row">
+
+
+          <div class="premium-input-box">
+
+            <svg
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                d="M3 7.5 12 3l9 4.5v9L12 21l-9-4.5v-9Zm9-2.2L6.4 8 12 10.8 17.6 8 12 5.3ZM5 9.5v5.8l6 3v-5.8l-6-3Zm8 8.8 6-3V9.5l-6 3v5.8Z"
+              />
+            </svg>
+
+
+            <input
+              type="text"
+              id="trackingNumber"
+              placeholder="Enter your tracking number"
+              autocomplete="off"
+            >
+
+          </div>
+
+
+          <button
+            type="button"
+            class="premium-track-btn"
+            id="trackOrderBtn"
+          >
+            Track Order
+            <span>→</span>
+          </button>
+
+
+        </div>
+
+
+        <p
+          class="tracking-error"
+          id="trackingError"
+        ></p>
+
+
+        <div class="official-tracking">
+
+          <span class="shield-icon">
+            ✓
+          </span>
+
+          Secure tracking through official
+          courier services.
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+
+    <!-- =====================================
+    RIGHT VISUAL
+    ====================================== -->
+
+    <div class="tracking-right">
+
+
+      <div class="delivery-background">
+
+
+        <div class="delivery-label">
+
+          <span>
+            PAN INDIA
+          </span>
+
+          DELIVERY
+
+        </div>
+
+
+        <!-- TRUCK -->
+
+        <div class="delivery-truck">
+
+          <div class="truck-cabin">
+
+            <div class="truck-window"></div>
+
+          </div>
+
+
+          <div class="truck-box">
+
+            <div class="truck-logo">
+
+              <img
+                src="giftory_logo.png"
+                alt=""
+              >
+
+              <strong>
+                GIFTORY.CO
+              </strong>
+
+              <small>
+                MORE THAN GIFTS
+              </small>
+
+            </div>
+
+          </div>
+
+
+          <div class="truck-wheel wheel-one"></div>
+          <div class="truck-wheel wheel-two"></div>
+
+        </div>
+
+
+
+        <!-- PARCELS -->
+
+        <div class="parcel parcel-one"></div>
+        <div class="parcel parcel-two"></div>
+        <div class="parcel parcel-three"></div>
+
+
+
+        <!-- GIFT -->
+
+        <div class="premium-gift">
+
+          <div class="gift-lid"></div>
+
+          <div class="gift-body"></div>
+
+          <div class="gift-ribbon-v"></div>
+          <div class="gift-ribbon-h"></div>
+
+          <div class="gift-bow gift-bow-left"></div>
+          <div class="gift-bow gift-bow-right"></div>
+
+
+          <div class="gift-tag">
+
+            Happiness
+            <strong>
+              Delivered
+            </strong>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- SIDE INFO -->
+
+        <div class="delivery-side-card">
+
+
+          <div>
+
+            <span class="side-icon">
+              ◉
+            </span>
+
+            <p>
+              From
+              <strong>Our Hands</strong>
+            </p>
+
+          </div>
+
+
+          <div>
+
+            <span class="side-icon">
+              ▰
+            </span>
+
+            <p>
+              To Your
+              <strong>Loved Ones</strong>
+            </p>
+
+          </div>
+
+
+          <div>
+
+            <span class="side-icon">
+              ♡
+            </span>
+
+            <p>
+              With Care
+              <strong>Always</strong>
+            </p>
+
+          </div>
+
+
+        </div>
+
+
+        <div class="delivery-quote">
+
+          Because every
+          <br>
+          gift matters ♡
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================
+BENEFITS
+========================================= -->
+
+<section class="tracking-benefits-premium">
+
+  <div class="tracking-benefits-grid">
+
+
+    <div class="tracking-benefit-item">
+
+      <div class="tracking-benefit-icon">
+        ✓
+      </div>
+
+      <div>
+        <h3>Real-Time Updates</h3>
+        <p>Get the latest status instantly</p>
+      </div>
+
+    </div>
+
+
+
+    <div class="tracking-benefit-item">
+
+      <div class="tracking-benefit-icon">
+        ⌖
+      </div>
+
+      <div>
+        <h3>Pan India Delivery</h3>
+        <p>Gifts delivered across India</p>
+      </div>
+
+    </div>
+
+
+
+    <div class="tracking-benefit-item">
+
+      <div class="tracking-benefit-icon">
+        □
+      </div>
+
+      <div>
+        <h3>Safe & Secure</h3>
+        <p>Tracked through official partners</p>
+      </div>
+
+    </div>
+
+
+
+    <div class="tracking-benefit-item">
+
+      <div class="tracking-benefit-icon">
+        ☎
+      </div>
+
+      <div>
+        <h3>Need Help?</h3>
+        <p>We're just a message away</p>
+      </div>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================
+HELP STRIP
+========================================= -->
+
+<section class="tracking-help-strip">
+
+  <div class="tracking-help-inner">
+
+
+    <div class="tracking-help-title">
+
+      <h2>
+        Questions about your order?
+      </h2>
+
+      <p>
+        We're here to help!
+      </p>
+
+    </div>
+
+
+
+    <a
+      href="https://wa.me/919082698013?text=Hi%20Giftory%2C%20I%20need%20help%20with%20my%20order."
+      target="_blank"
+      class="tracking-whatsapp-btn"
+    >
+
+      <span>
+        ☏
+      </span>
+
+      Chat with us on WhatsApp
+
+    </a>
+
+
+
+    <div class="tracking-help-message">
+
+      <span>
+        ✉
+      </span>
+
+      <div>
+
+        <small>
+          Need assistance?
+        </small>
+
+        <strong>
+          Contact Giftory Support
+        </strong>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="tracking-help-slogan">
+
+      GIFTS CREATE
+      <br>
+      BRIGHTER
+      <br>
+      TOMORROWS ♡
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =========================================
+JAVASCRIPT
+========================================= -->
+
+<script src="script.js"></script>
+
+
+<script>
+
+document.addEventListener(
+  "DOMContentLoaded",
+  function () {
+
+
+    /* =====================================
+    COURIER SELECTION
+    ====================================== */
+
+    let selectedCourier = "delhivery";
+
+
+    const partnerCards =
+      document.querySelectorAll(".partner-card");
+
+
+    const trackingInput =
+      document.getElementById("trackingNumber");
+
+
+    const trackButton =
+      document.getElementById("trackOrderBtn");
+
+
+    const trackingError =
+      document.getElementById("trackingError");
+
+
+
+    partnerCards.forEach(function (card) {
+
+      card.addEventListener(
+        "click",
+        function () {
+
+          partnerCards.forEach(function (item) {
+            item.classList.remove("active");
+          });
+
+
+          this.classList.add("active");
+
+
+          selectedCourier =
+            this.dataset.courier;
+
+
+          trackingError.textContent = "";
+
+        }
+      );
+
+    });
+
+
+
+    /* =====================================
+    TRACK ORDER
+    ====================================== */
+
+    function trackOrder() {
+
+
+      const awb =
+        trackingInput.value.trim();
+
+
+      if (!awb) {
+
+        trackingError.textContent =
+          "Please enter your AWB / tracking number.";
+
+        trackingInput.focus();
+
+        return;
+
+      }
+
+
+      trackingError.textContent = "";
+
+
+      if (selectedCourier === "delhivery") {
+
+  window.open(
+    "https://www.delhivery.com/",
+    "_blank"
+  );
+
+}
+
+      /* DTDC */
+
+      else {
+
+        window.open(
+          "https://www.dtdc.com/track-your-shipment/",
+          "_blank"
+        );
+
+      }
+
+    }
+
+
+    trackButton.addEventListener(
+      "click",
+      trackOrder
+    );
+
+
+    trackingInput.addEventListener(
+      "keydown",
+      function (event) {
+
+        if (event.key === "Enter") {
+          trackOrder();
+        }
+
+      }
+    );
+
+
+
+    /* =====================================
+    MOBILE MENU
+    ====================================== */
+
+    const menuButton =
+      document.getElementById(
+        "trackingMenuToggle"
+      );
+
+
+    const mobileMenu =
+      document.getElementById(
+        "trackingMobileMenu"
+      );
+
+
+    if (menuButton && mobileMenu) {
+
+      menuButton.addEventListener(
+        "click",
+        function () {
+
+          this.classList.toggle("active");
+
+          mobileMenu.classList.toggle("active");
+
+        }
+      );
+
+    }
+
+
+  }
+);
+
+</script>
+
+
+</body>
+</html>
